@@ -28,7 +28,7 @@ atmusers_router.register(r'operations', ATMUserOperationsViewSet)
 admin.autodiscover()
 
 urlpatterns = [
-    url('^$', IndexView.as_view()),
+    url('^$', IndexView.as_view(), name='index'),
     url(r'^api/', include(router.urls)),
     url(r'^api/', include(atmusers_router.urls)),
     url(r'^api/login/(?P<card>[^/.]+)?$', LoginView.as_view(), name='login'),
