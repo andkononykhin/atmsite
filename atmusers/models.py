@@ -11,7 +11,7 @@ class ATMUserManager(BaseUserManager):
                      is_superuser, cash, **kwargs):
         """
         """
-        if not card:
+        if card is None:
             raise ValueError('The given card number must be specified')
         user = self.model(card=card,
                           password=password,
@@ -95,7 +95,7 @@ class Operation(models.Model):
     add_info = models.CharField(max_length=100, null=True)
 
     def __unicode__(self):
-        return ('%d: atmuser %s, operation: %s, time: %s' %
-                (self.pk, self.atmuser,
-                 self.OPERATION_CHOICES_DICT[self.code],
-                 self.registered_at))
+        return ('{0}: atmuser {1}, operation: {2}, time: {3}'.format(
+                    self.pk, self.atmuser,
+                    self.OPERATION_CHOICES_DICT[self.code],
+                    self.registered_at))
