@@ -549,7 +549,7 @@ module.exports = function (grunt) {
     'uglify',
     'filerev',
     'usemin',
-    //'htmlmin',
+    'htmlmin',
   ]);
 
   grunt.registerTask('default', [
