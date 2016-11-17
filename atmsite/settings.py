@@ -25,7 +25,7 @@ SECRET_KEY = '%7oapkjl%1^45cgxw3dq0=s9e+83f3kcgkpj9r(m8zzl4j*v@y'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['localhost']
+ALLOWED_HOSTS = ['localhost', '127.0.0.1']
 
 
 # Application definition
@@ -114,10 +114,6 @@ if DEBUG:
     STATICFILES_DIRS = (
         os.path.join(BASE_DIR, 'atmusers/client'),
         os.path.join(BASE_DIR, 'atmusers/client/app'),
-    )
-else:
-    STATICFILES_DIRS = (
-        os.path.join(BASE_DIR, 'atmsite/static'),
     )
 
 # Models settings
