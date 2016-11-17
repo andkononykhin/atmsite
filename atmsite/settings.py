@@ -116,5 +116,10 @@ if DEBUG:
         os.path.join(BASE_DIR, 'atmusers/client/app'),
     )
 
+FIXTURE_DIRS = (
+    os.path.join(BASE_DIR),
+    os.path.join(BASE_DIR, 'atmusers/tests')
+)
+
 # Models settings
 AUTH_USER_MODEL = 'atmusers.ATMUser'
