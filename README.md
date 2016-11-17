@@ -25,7 +25,7 @@ Please, check the details below if something goes wrong.
 
     [Possible ways](https://gist.github.com/isaacs/579814)
 
-From the progect's root:
+From the project's root:
 
 - Install and activate python virtualenv
 
