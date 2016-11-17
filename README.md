@@ -21,11 +21,11 @@ Please, check the details below if something goes wrong.
 
 ## Installation in details
 
-Inside progect's root:
-
 - Install Node.js and npm
 
     [Possible ways](https://gist.github.com/isaacs/579814)
+
+Inside progect's root:
 
 - Install and activate python virtualenv
 
