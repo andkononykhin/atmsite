@@ -238,6 +238,7 @@ module.exports = function (grunt) {
       app: {
         src: ['<%= yeoman.djangoAppTemplates %>/index.html'],
         ignorePath:  /\.\.\/client\//,
+        exclude: [ /jquery/, /bootstrap.js/ ],
         fileTypes: {
           html: {
             replace: {
