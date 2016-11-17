@@ -12,7 +12,8 @@ STATIC=./static
 
 
 pep8:
-	pep8 . --exclude='env,node_modules,migrations'
+	source env/bin/activate && \
+		pep8 . --exclude="env,node_modules,migrations"
 
 env:
 	virtualenv-2.7 env && \
