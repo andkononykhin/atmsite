@@ -6,3 +6,4 @@
 /atmusers/client/bower_components
 
 *.pyc
+*.swp

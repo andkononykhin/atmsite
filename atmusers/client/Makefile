@@ -1,8 +1,8 @@
-.PHONY: all node npm grunt bower app
+.PHONY: all node npm grunt bower dist install
 
 PATHENV=$$HOME/local/bin:$$PATH
 
-all: app
+all: dist
 
 # https://gist.github.com/isaacs/579814
 # ways of node.js and npm installation
@@ -37,3 +37,5 @@ dist:
 
 distclean:
 	grunt clean
+
+env: grunt bower

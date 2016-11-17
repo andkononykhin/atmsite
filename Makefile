@@ -1,4 +1,4 @@
-.PHONY: all client pep8 env db dist
+.PHONY: all client pep8 env db dist install
 
 
 all: env db dist
@@ -24,6 +24,10 @@ db:
 client:
 	make -C atmusers/client dist
 
-
 dist: client
 	python manage.py collectstatic --ignore node_modules --ignore bower_components
+
+install:
+	make env db
+	make -C atmusers/client env
+	make dist
