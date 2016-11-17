@@ -20,7 +20,7 @@ class ATMUserTests(APITestCase):
         """
         users_num = ATMUser.objects.count()
 
-        atmuser = ATMUser.objects.get(card='0000000000000000') # get admin
+        atmuser = ATMUser.objects.get(card='0000000000000000')  # get admin
         view = ATMUserViewSet.as_view({'post': 'create'})
 
         data = {'card': '7777777777777777', 'password': '7777', 'cash': 700}
@@ -31,7 +31,6 @@ class ATMUserTests(APITestCase):
 
         self.assertEqual(response.status_code, status.HTTP_201_CREATED)
         self.assertEqual(ATMUser.objects.count(), users_num + 1)
-
 
     def test_api_update_atmuser_cash_enough(self):
         """
@@ -44,7 +43,8 @@ class ATMUserTests(APITestCase):
         withdrawal = cash - 1
 
         data = {'withdrawal': atmuser.cash - 1, 'card': atmuser.cash}
-        request = factory.patch(reverse('atmuser-detail', kwargs={'card': atmuser.card}),
+        request = factory.patch(reverse('atmuser-detail',
+                                kwargs={'card': atmuser.card}),
                                 data, format='json')
 
         force_authenticate(request, user=atmuser)
