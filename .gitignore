@@ -1,5 +1,6 @@
 /env
 /static
+/htmlcov
 /atmusers/static
 /atmusers/client/.tmp
 /atmusers/client/node_modules
@@ -9,3 +10,4 @@
 *.swp
 *.sqlite3
 *.min.html
+.coverage
