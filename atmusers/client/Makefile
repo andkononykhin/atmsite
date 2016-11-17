@@ -22,10 +22,13 @@ npm:
 	export PATH="$(PATHENV)" && \
 		curl -L https://www.npmjs.com/install.sh | sh
 
-grunt:
+node_modules:
 	export PATH="$(PATHENV)" && \
-		npm install -g grunt-cli && \
 		npm install
+
+grunt: node_modules
+	export PATH="$(PATHENV)" && \
+		npm install -g grunt-cli
 
 bower:
 	export PATH="$(PATHENV)" && \

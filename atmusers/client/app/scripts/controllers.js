@@ -85,6 +85,19 @@ angular.module('clientApp')
 
   }])
 
+  .controller('MainStateController', ['$log', '$state', 'ATMCtx',
+      function ($log, $state, ATMCtx) {
+
+    $log.debug('MainStateController');
+
+    //var vm = this;
+
+    if (!ATMCtx.atmuser) {
+      $state.go('logout');
+    }
+  }])
+
+
   .controller('LogoutStateController', ['$log', '$state', 'Auth', 'ATMCtx',
       function ($log, $state, Auth, ATMCtx) {
     $log.debug('LogoutStateController');

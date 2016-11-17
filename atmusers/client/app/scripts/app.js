@@ -72,7 +72,9 @@ angular
     var mainState = {
       name: 'main',
       url: '/main',
-      templateUrl: 'views/main.html'
+      templateUrl: 'views/main.html',
+      controller: 'MainStateController',
+      controllerAs: 'vm',
     };
 
     var balanceState = {
@@ -139,9 +141,9 @@ angular
         }, FAST_ENOUGH);
 
         if (!$stateParams.promise) {
+          //FIXME could happens in legal case: back button in browser
           $log.warn('promise is not defined');
-          $stateParams.promise = $q.resolve({nextState: 'error',
-            params: {error: ERRORS.UNKNOWN}});
+          $stateParams.promise = $q.resolve('main');
         }
 
         $stateParams.promise.then(function(nextState) {
@@ -179,5 +181,5 @@ angular
     $stateProvider.state(errorState);
     $stateProvider.state(waitingState);
 
-    $urlRouterProvider.otherwise('/');
+    $urlRouterProvider.otherwise('main');
   }]);
