@@ -1,0 +1,56 @@
+<div class="row">
+  <div class="col-xs-2 text-center padding-0">
+    <button ng-disabled="vm.done" type="button" class="btn btn-default btn-block" ng-click="vm.press('1')">1</button>
+  </div>
+  <div class="col-xs-2 text-center padding-0">
+    <button ng-disabled="vm.done" type="button" class="btn btn-default btn-block" ng-click="vm.press('2')">2</button>
+  </div>
+  <div class="col-xs-2 text-center padding-0">
+    <button ng-disabled="vm.done" type="button" class="btn btn-default btn-block" ng-click="vm.press('3')">3</button>
+  </div>
+  <div class="col-xs-4 text-center padding-0">
+    <button ng-disabled="!vm.value" type="button" class="btn btn-default btn-block" ng-click="vm.clear()">Очистить</button>
+  </div>
+</div>
+<div class="row">
+  <div class="col-xs-2 text-center padding-0">
+    <button ng-disabled="vm.done" type="button" class="btn btn-default btn-block" ng-click="vm.press('4')">4</button>
+  </div>
+  <div class="col-xs-2 text-center padding-0">
+    <button ng-disabled="vm.done" type="button" class="btn btn-default btn-block" ng-click="vm.press('5')">5</button>
+  </div>
+  <div class="col-xs-2 text-center padding-0">
+    <button ng-disabled="vm.done" type="button" class="btn btn-default btn-block" ng-click="vm.press('5')">6</button>
+  </div>
+  <div class="col-xs-4 text-center padding-0">
+    <button ng-disabled="!vm.ready" type="button" class="btn btn-default btn-block" ng-click="vm.ok()">
+      OK
+    </button>
+  </div>
+</div>
+<div class="row">
+  <div class="col-xs-2 text-center padding-0">
+    <button ng-disabled="vm.done" type="button" class="btn btn-default btn-block" ng-click="vm.press('7')">7</button>
+  </div>
+  <div class="col-xs-2 text-center padding-0">
+    <button ng-disabled="vm.done" type="button" class="btn btn-default btn-block" ng-click="vm.press('8')">8</button>
+  </div>
+  <div class="col-xs-2 text-center padding-0">
+    <button ng-disabled="vm.done" type="button" class="btn btn-default btn-block" ng-click="vm.press('9')">9</button>
+  </div>
+  <div class="col-xs-4 text-center padding-0">
+    <button ng-disabled="!vm.back" type="button" class="btn btn-default btn-block" ng-click="vm.back()">Назад</button>
+  </div>
+</div>
+<div class="row">
+  <div class="col-xs-2 text-center padding-0">
+  </div>
+  <div class="col-xs-2 text-center padding-0">
+    <button ng-disabled="vm.done" type="button" class="btn btn-default btn-block" ng-click="vm.press('0')">0</button>
+  </div>
+  <div class="col-xs-2 text-center padding-0">
+  </div>
+  <div class="col-xs-4 text-center padding-0">
+    <button ng-disabled="!vm.exit" type="button" class="btn btn-default btn-block" ng-click="vm.exit()">Выход</button>
+  </div>
+</div>

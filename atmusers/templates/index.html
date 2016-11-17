@@ -1,0 +1,93 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <!-- build:css(.) {{STATIC_URL}}styles/vendor.css -->
+    <!-- bower:css -->
+    <link rel="stylesheet" href="{{STATIC_URL}}bower_components/bootstrap/dist/css/bootstrap.css" />
+    <!-- endbower -->
+    <!-- endbuild -->
+    <!-- build:css(.tmp) {{STATIC_URL}}styles/main.css -->
+    <link rel="stylesheet" href="{{STATIC_URL}}styles/main.css">
+    <!-- endbuild -->
+  </head>
+  <body ng-app="clientApp">
+    <!--[if lte IE 8]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+    <base href="/">
+
+    <div class="header" ng-controller="NavbarController as vm">
+      <div class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#js-navbar-collapse" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" ui-sref-active="false">Банкомат</a>
+          </div>
+
+          <div class="collapse navbar-collapse" id="js-navbar-collapse">
+
+            {% verbatim %}
+            <ul class="nav navbar-nav navbar-right" ng-cloak>
+              <li ng-if="vm.atmuser.atmuser" class="dropdown">
+                <a ui-sref-active="false" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                  aria-haspopup="true" aria-expanded="false">{{ vm.atmuser.atmuser.card | cardNumber }}
+                    <span class="caret"></span>
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a ui-sref="logout">Выход</a></li>
+                </ul>
+              </li>
+            </ul>
+            {% endverbatim %}
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <ui-view></ui-view>
+    </div>
+
+    <!-- build:js(.) {{STATIC_URL}}scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="{{STATIC_URL}}bower_components/jquery/dist/jquery.js"></script>
+    <script src="{{STATIC_URL}}bower_components/angular/angular.js"></script>
+    <script src="{{STATIC_URL}}bower_components/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="{{STATIC_URL}}bower_components/angular-cookies/angular-cookies.js"></script>
+    <script src="{{STATIC_URL}}bower_components/angular-resource/angular-resource.js"></script>
+    <script src="{{STATIC_URL}}bower_components/angular-route/angular-route.js"></script>
+    <script src="{{STATIC_URL}}bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+    <script src="{{STATIC_URL}}bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+    <!-- endbower -->
+    <script src="{{STATIC_URL}}bower_components/angular-i18n/angular-locale_ru-ru.js"></script>
+    <!-- endbuild -->
+
+    <!-- build:devel -->
+    <script src="{{STATIC_URL}}scripts/templateCache.js"></script>
+    <!-- endbuild -->
+
+        <!-- build:js({.tmp,app}) {{STATIC_URL}}scripts/scripts.js -->
+        <script src="{{STATIC_URL}}scripts/app.js"></script>
+        <script src="{{STATIC_URL}}scripts/services.js"></script>
+        <script src="{{STATIC_URL}}scripts/filters.js"></script>
+        <script src="{{STATIC_URL}}scripts/directives.js"></script>
+        <script src="{{STATIC_URL}}scripts/controllers.js"></script>
+        <!-- endbuild -->
+</body>
+</html>
+
+
+

@@ -1,0 +1,397 @@
+[
+{
+    "fields": {
+        "model": "logentry",
+        "app_label": "admin"
+    },
+    "model": "contenttypes.contenttype",
+    "pk": 1
+},
+{
+    "fields": {
+        "model": "permission",
+        "app_label": "auth"
+    },
+    "model": "contenttypes.contenttype",
+    "pk": 2
+},
+{
+    "fields": {
+        "model": "group",
+        "app_label": "auth"
+    },
+    "model": "contenttypes.contenttype",
+    "pk": 3
+},
+{
+    "fields": {
+        "model": "contenttype",
+        "app_label": "contenttypes"
+    },
+    "model": "contenttypes.contenttype",
+    "pk": 4
+},
+{
+    "fields": {
+        "model": "session",
+        "app_label": "sessions"
+    },
+    "model": "contenttypes.contenttype",
+    "pk": 5
+},
+{
+    "fields": {
+        "model": "atmuser",
+        "app_label": "atmusers"
+    },
+    "model": "contenttypes.contenttype",
+    "pk": 6
+},
+{
+    "fields": {
+        "model": "operation",
+        "app_label": "atmusers"
+    },
+    "model": "contenttypes.contenttype",
+    "pk": 7
+},
+{
+    "fields": {
+        "codename": "add_logentry",
+        "name": "Can add log entry",
+        "content_type": 1
+    },
+    "model": "auth.permission",
+    "pk": 1
+},
+{
+    "fields": {
+        "codename": "change_logentry",
+        "name": "Can change log entry",
+        "content_type": 1
+    },
+    "model": "auth.permission",
+    "pk": 2
+},
+{
+    "fields": {
+        "codename": "delete_logentry",
+        "name": "Can delete log entry",
+        "content_type": 1
+    },
+    "model": "auth.permission",
+    "pk": 3
+},
+{
+    "fields": {
+        "codename": "add_permission",
+        "name": "Can add permission",
+        "content_type": 2
+    },
+    "model": "auth.permission",
+    "pk": 4
+},
+{
+    "fields": {
+        "codename": "change_permission",
+        "name": "Can change permission",
+        "content_type": 2
+    },
+    "model": "auth.permission",
+    "pk": 5
+},
+{
+    "fields": {
+        "codename": "delete_permission",
+        "name": "Can delete permission",
+        "content_type": 2
+    },
+    "model": "auth.permission",
+    "pk": 6
+},
+{
+    "fields": {
+        "codename": "add_group",
+        "name": "Can add group",
+        "content_type": 3
+    },
+    "model": "auth.permission",
+    "pk": 7
+},
+{
+    "fields": {
+        "codename": "change_group",
+        "name": "Can change group",
+        "content_type": 3
+    },
+    "model": "auth.permission",
+    "pk": 8
+},
+{
+    "fields": {
+        "codename": "delete_group",
+        "name": "Can delete group",
+        "content_type": 3
+    },
+    "model": "auth.permission",
+    "pk": 9
+},
+{
+    "fields": {
+        "codename": "add_contenttype",
+        "name": "Can add content type",
+        "content_type": 4
+    },
+    "model": "auth.permission",
+    "pk": 10
+},
+{
+    "fields": {
+        "codename": "change_contenttype",
+        "name": "Can change content type",
+        "content_type": 4
+    },
+    "model": "auth.permission",
+    "pk": 11
+},
+{
+    "fields": {
+        "codename": "delete_contenttype",
+        "name": "Can delete content type",
+        "content_type": 4
+    },
+    "model": "auth.permission",
+    "pk": 12
+},
+{
+    "fields": {
+        "codename": "add_session",
+        "name": "Can add session",
+        "content_type": 5
+    },
+    "model": "auth.permission",
+    "pk": 13
+},
+{
+    "fields": {
+        "codename": "change_session",
+        "name": "Can change session",
+        "content_type": 5
+    },
+    "model": "auth.permission",
+    "pk": 14
+},
+{
+    "fields": {
+        "codename": "delete_session",
+        "name": "Can delete session",
+        "content_type": 5
+    },
+    "model": "auth.permission",
+    "pk": 15
+},
+{
+    "fields": {
+        "codename": "add_atmuser",
+        "name": "Can add atm user",
+        "content_type": 6
+    },
+    "model": "auth.permission",
+    "pk": 16
+},
+{
+    "fields": {
+        "codename": "change_atmuser",
+        "name": "Can change atm user",
+        "content_type": 6
+    },
+    "model": "auth.permission",
+    "pk": 17
+},
+{
+    "fields": {
+        "codename": "delete_atmuser",
+        "name": "Can delete atm user",
+        "content_type": 6
+    },
+    "model": "auth.permission",
+    "pk": 18
+},
+{
+    "fields": {
+        "codename": "add_operation",
+        "name": "Can add operation",
+        "content_type": 7
+    },
+    "model": "auth.permission",
+    "pk": 19
+},
+{
+    "fields": {
+        "codename": "change_operation",
+        "name": "Can change operation",
+        "content_type": 7
+    },
+    "model": "auth.permission",
+    "pk": 20
+},
+{
+    "fields": {
+        "codename": "delete_operation",
+        "name": "Can delete operation",
+        "content_type": 7
+    },
+    "model": "auth.permission",
+    "pk": 21
+},
+{
+    "fields": {
+        "is_blocked": false,
+        "cash": 0,
+        "is_superuser": true,
+        "version": 1,
+        "last_login": "2016-11-17T09:24:54.634Z",
+        "groups": [],
+        "user_permissions": [],
+        "password": "pbkdf2_sha256$20000$FZmvMvTB7AuU$VUAp4NKmHPUG/NOoL9z9dgbNJ6aOd8OHzOk4d7BeBhg=",
+        "card": "0000000000000000"
+    },
+    "model": "atmusers.atmuser",
+    "pk": 1
+},
+{
+    "fields": {
+        "is_blocked": false,
+        "cash": 100,
+        "is_superuser": false,
+        "version": 1,
+        "last_login": null,
+        "groups": [],
+        "user_permissions": [],
+        "password": "pbkdf2_sha256$20000$jQQHUgObd5XA$t4m9RS19SQan1kROJUsxdmkqFmep06BpiScmLXbpUJc=",
+        "card": "1111111111111111"
+    },
+    "model": "atmusers.atmuser",
+    "pk": 2
+},
+{
+    "fields": {
+        "is_blocked": false,
+        "cash": 197,
+        "is_superuser": false,
+        "version": 2,
+        "last_login": null,
+        "groups": [],
+        "user_permissions": [],
+        "password": "pbkdf2_sha256$20000$6722BStnJl2F$x5SH0IdR0MIshvCP/5M5OpjEetU9GnKiIcmnTZz83a4=",
+        "card": "2222222222222222"
+    },
+    "model": "atmusers.atmuser",
+    "pk": 3
+},
+{
+    "fields": {
+        "is_blocked": false,
+        "cash": 300,
+        "is_superuser": false,
+        "version": 3,
+        "last_login": null,
+        "groups": [],
+        "user_permissions": [],
+        "password": "pbkdf2_sha256$20000$8AoeWFMMAiVi$+WhEy2NmV18iaQmq7Ny062bzwHgoRFO6B+E7zP+Rc+U=",
+        "card": "3333333333333333"
+    },
+    "model": "atmusers.atmuser",
+    "pk": 4
+},
+{
+    "fields": {
+        "is_blocked": true,
+        "cash": 400,
+        "is_superuser": false,
+        "version": 4,
+        "last_login": null,
+        "groups": [],
+        "user_permissions": [],
+        "password": "pbkdf2_sha256$20000$1GISTDCVBihp$EMtpCADjygYPv0nqvfAy6XJAzsKBtawOoVjULpesWsI=",
+        "card": "4444444444444444"
+    },
+    "model": "atmusers.atmuser",
+    "pk": 5
+},
+{
+    "fields": {
+        "is_blocked": true,
+        "cash": 500,
+        "is_superuser": false,
+        "version": 5,
+        "last_login": null,
+        "groups": [],
+        "user_permissions": [],
+        "password": "pbkdf2_sha256$20000$xRglB0lvejN7$99httgYuqqdO1qkyn5rkQH8EUlpId2gn5V9Ih/MLaW0=",
+        "card": "5555555555555555"
+    },
+    "model": "atmusers.atmuser",
+    "pk": 6
+},
+{
+    "fields": {
+        "code": 1,
+        "cash": 100,
+        "registered_at": "2016-11-17T09:25:07.573Z",
+        "add_info": null,
+        "withdrawal": null,
+        "atmuser": 2
+    },
+    "model": "atmusers.operation",
+    "pk": 1
+},
+{
+    "fields": {
+        "code": 1,
+        "cash": 197,
+        "registered_at": "2016-11-17T09:25:17.245Z",
+        "add_info": null,
+        "withdrawal": null,
+        "atmuser": 3
+    },
+    "model": "atmusers.operation",
+    "pk": 2
+},
+{
+    "fields": {
+        "code": 1,
+        "cash": 300,
+        "registered_at": "2016-11-17T09:25:32.524Z",
+        "add_info": null,
+        "withdrawal": null,
+        "atmuser": 4
+    },
+    "model": "atmusers.operation",
+    "pk": 3
+},
+{
+    "fields": {
+        "code": 1,
+        "cash": 400,
+        "registered_at": "2016-11-17T09:25:54.903Z",
+        "add_info": null,
+        "withdrawal": null,
+        "atmuser": 5
+    },
+    "model": "atmusers.operation",
+    "pk": 4
+},
+{
+    "fields": {
+        "code": 1,
+        "cash": 500,
+        "registered_at": "2016-11-17T09:26:18.925Z",
+        "add_info": null,
+        "withdrawal": null,
+        "atmuser": 6
+    },
+    "model": "atmusers.operation",
+    "pk": 5
+}
+]

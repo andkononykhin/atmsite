@@ -1,0 +1,35 @@
+<div class="row">
+  <div class="col-xs-10 col-xs-offset-1 col-md-6 col-md-offset-3">
+    <div class="row">
+      <div class="col-xs-12 padding-0">
+        <h1>Снятие денег</h1>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-xs-10 padding-0">
+        <form role="form" ng-submit="vm.login()">
+
+          <div class="form-group">
+            <label for="withdrawal_cash">Сумма</label>
+            <span class="form-control" id="withdrawal_cash">
+              {{ vm.withdrawal | currency:undefined:0 }}
+            </span>
+          </div>
+
+        </form>
+      </div>
+    </div>
+
+    <atm-keyboard
+      value="vm.withdrawal"
+      min-length="1"
+      on-ok="vm.withdraw()"
+      on-back="vm.back()"
+      on-exit="vm.exit()">
+    </atm-keyboard>
+
+  </div>
+</div>
+
+

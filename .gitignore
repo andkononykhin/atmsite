@@ -1,0 +1,8 @@
+/env
+/static
+/atmusers/static
+/atmusers/client/.tmp
+/atmusers/client/node_modules
+/atmusers/client/bower_components
+
+*.pyc
